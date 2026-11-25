@@ -4,7 +4,17 @@
   "description": "Memory card matching game PWA: three levels, move and time counters, best scores saved locally.",
   "scripts": {
     "test": "node test.js",
-    "start": "npx --yes serve ."
+    "start": "npx --yes serve www",
+    "sync": "cap sync android",
+    "android": "cap open android",
+    "build:apk": "cd android && ./gradlew assembleDebug"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
 }

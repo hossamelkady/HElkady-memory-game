@@ -1,4 +1,4 @@
-const assert=require('assert');const M=require('./logic.js');
+const assert=require('assert');const M=require('./www/logic.js');
 for(const k of Object.keys(M.LEVELS)){const L=M.LEVELS[k];const deck=M.makeDeck(L.pairs);
  assert.strictEqual(deck.length,L.pairs*2);assert.strictEqual((L.pairs*2)%L.cols,0);
  const counts={};deck.forEach(c=>counts[c.symbol]=(counts[c.symbol]||0)+1);
