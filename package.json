@@ -1,0 +1,10 @@
+{
+  "name": "helkady-memory-game",
+  "version": "1.0.0",
+  "description": "Memory card matching game PWA: three levels, move and time counters, best scores saved locally.",
+  "scripts": {
+    "test": "node test.js",
+    "start": "npx --yes serve ."
+  },
+  "license": "MIT"
+}
